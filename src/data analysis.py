@@ -53,6 +53,7 @@ def plot_vizualization(df):
     '''Correlation heatmap'''
     sns.heatmap(df.corr(), annot=True, cmap='YlGnBu')
     plt.title('Correlation Heatmap')
+    plt.savefig('../plots/heatmap.png', dpi=300, bbox_inches='tight')
     plt.show()
 
     '''Spearman correlation for selected columns'''
